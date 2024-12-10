@@ -1,4 +1,4 @@
-Docker da databaseler için yapılanalar 
+*****Docker da databaseler için yapılanalar 
 {
 portanier oluşturduk. oluşum için powershell kodları
 [
@@ -6,13 +6,14 @@ docker volume create portainer_data
 
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 ]
+
 Docker da farklı dbler ayağa kaldırdık.
 Mongo ve 2 Sql. 
 localhost9000 den arayüzden temlates applicationdan hangi database i istiyorsak onu seçip kurduk.
 sql order için 1431 port.
 sql categorty için 1430 port.
 mongo için 27017 port. 
-migariton alnmış durumda docker ayağa kalkınca updata-database diyeceğiz.
+migariton alınmış durumda docker ayağa kalkınca updata-database diyeceğiz.
 }
 
 
@@ -20,7 +21,6 @@ migariton alnmış durumda docker ayağa kalkınca updata-database diyeceğiz.
 {
 Postman üzerinden test ettik.
 new diyip grpc sectik.
-host adresine consoldaki adresi yazdık ve getall gibi bişey yaptık. daha sonra bizim tüm metotlarımız postman dropdown a geldi.
-
-
+host adresine consoldaki adresi yazdık ve Import proto file yaptık. daha sonra bizim tüm metotlarımız postman dropdown a geldi.
+Evde postmana proıjedeki Discount startup proje yaptım. local de IIS de ayağa kaldırıp urli yazdım. çalıştırdım.
 }
