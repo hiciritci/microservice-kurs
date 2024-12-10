@@ -1,0 +1,3 @@
+Postman üzerinden test ettik.
+new diyip grpc sectik.
+host adresine consoldaki adresi yazdık ve getall gibi bişey yaptık. daha sonra bizim tüm metotlarımız postman dropdown a geldi.
