@@ -10,12 +10,9 @@ public class GeneralMapping : Profile
     public GeneralMapping()
     {
         CreateMap<Coupon, GetCouponResponse>().ReverseMap();
-        CreateMap<CouponRedemption, GetCouponRedemptionResponses>().ReverseMap();
+        CreateMap<CouponRedemption, GetCouponRedemptionResponse>().ReverseMap();
 
-        CreateMap<Timestamp, DateTime>().ConvertUsing(p => p == null ? default : p.ToDateTime());
-
-        CreateMap<DateTime, Timestamp>().ConvertUsing(c => Timestamp.FromDateTime(c.ToUniversalTime()));
-
-
+        CreateMap<Timestamp, DateTime>().ConvertUsing(t => t == null ? default : t.ToDateTime());
+        CreateMap<DateTime, Timestamp>().ConvertUsing(d => Timestamp.FromDateTime(d.ToUniversalTime()));
     }
 }
