@@ -27,3 +27,7 @@ Evde postmana projedeki Discount startup proje yaptım. local de IIS de ayağa k
 
 **** IdentityServer için Yapılanlar
 Ms Sql docker de ayağa kaldırıldı.
+
+
+***YDS eğitim Seti Linki
+https://erasmusegitim.blogspot.com/2020/05/ingilizce-arsivi-yandex.html?m=1
