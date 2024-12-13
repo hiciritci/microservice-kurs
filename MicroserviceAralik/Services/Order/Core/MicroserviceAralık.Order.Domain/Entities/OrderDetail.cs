@@ -7,6 +7,6 @@ public class OrderDetail
     public decimal ProductPrice { get; set; }
     public int ProductAmount { get; set; }
     public decimal TotalPrice { get; set; }
-    public int OrderdingId { get; set; }
+    public int OrderingId { get; set; }
     public Ordering Ordering { get; set; }
 }

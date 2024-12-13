@@ -22,5 +22,8 @@ migariton alınmış durumda docker ayağa kalkınca updata-database diyeceğiz.
 Postman üzerinden test ettik.
 new diyip grpc sectik.
 host adresine consoldaki adresi yazdık ve Import proto file yaptık. daha sonra bizim tüm metotlarımız postman dropdown a geldi.
-Evde postmana proıjedeki Discount startup proje yaptım. local de IIS de ayağa kaldırıp urli yazdım. çalıştırdım.
+Evde postmana projedeki Discount startup proje yaptım. local de IIS de ayağa kaldırıp urli yazdım. çalıştırdım.
 }
+
+**** IdentityServer için Yapılanlar
+Ms Sql docker de ayağa kaldırıldı.

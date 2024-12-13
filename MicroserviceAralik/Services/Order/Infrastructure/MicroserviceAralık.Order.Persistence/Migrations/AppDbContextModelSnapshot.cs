@@ -79,9 +79,6 @@ namespace MicroserviceAralık.Order.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("OrderdingId")
-                        .HasColumnType("int");
-
                     b.Property<int>("OrderingId")
                         .HasColumnType("int");
 
