@@ -9,7 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.Catalog
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{2BC845BC-913B-4AB6-832A-558B14DABEAD}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\Users\Admin\Downloads\Ekran görüntüsü 2024-12-19 145655.png = ..\..\Users\Admin\Downloads\Ekran görüntüsü 2024-12-19 145655.png
 		..\..\Users\Admin\Desktop\MikroServis\MikroServis\requirements\portainer.txt = ..\..\Users\Admin\Desktop\MikroServis\MikroServis\requirements\portainer.txt
+		PortNumbers.txt = PortNumbers.txt
+		Rabbit docker.txt = Rabbit docker.txt
 		..\..\Users\Admin\Desktop\MikroServis\MikroServis\requirements\Serilog conf.txt = ..\..\Users\Admin\Desktop\MikroServis\MikroServis\requirements\Serilog conf.txt
 		..\..\Users\Admin\Desktop\MikroServis\MikroServis\requirements\Swagger token.txt = ..\..\Users\Admin\Desktop\MikroServis\MikroServis\requirements\Swagger token.txt
 	EndProjectSection
@@ -47,6 +50,34 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.Cargo.WebApi", "Services\Cargo\MicroserviceAralık.Cargo.WebApi\MicroserviceAralık.Cargo.WebApi.csproj", "{D64C554A-9A0A-47C9-8DC7-FFC23C928403}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.IdentityServer", "IdentityServer\MicroserviceAralık.IdentityServer\MicroserviceAralık.IdentityServer.csproj", "{22006F50-31D2-47F8-A786-DE6CECD60E1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{078E9710-4177-4447-985A-D446032E34FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.Basket", "Services\Basket\MicroserviceAralık.Basket\MicroserviceAralık.Basket.csproj", "{D80D1E03-FD3F-44B7-AE29-DFA2D9D0498D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", "{16245329-9985-41F5-A685-27B33B946773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.OcelotGateway", "ApiGateway\MicroserviceAralık.OcelotGateway\MicroserviceAralık.OcelotGateway.csproj", "{02D2BC2D-B970-483B-BB69-FC867CD57E89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Image", "Image", "{524DF63B-BAD8-4887-B686-55218D70219A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{CC007625-3543-495B-9E07-87F2A5F5EA44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{25817676-13A2-43C2-9E02-ED3E9D403433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.Image", "Services\Image\MicroserviceAralık.Image\MicroserviceAralık.Image.csproj", "{241A0BD1-CE79-4543-AC4A-1ACF33C8E87D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Message", "Message", "{0EFCA366-95EF-4A9E-87D7-1E9D947AB069}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.Message", "Services\Message\MicroserviceAralık.Message\MicroserviceAralık.Message.csproj", "{6D97824A-918E-4195-BB68-CA311693FE62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inventory", "Inventory", "{FE960E70-C893-4CDA-8EA2-CCAD93775ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.Inventory", "Services\Inventory\MicroserviceAralık.Inventory\MicroserviceAralık.Inventory.csproj", "{076CA4A0-46A5-4A58-81E8-67C496CC343F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ", "RabbitMQ", "{B1FDEAFE-5B06-494E-BEC3-848FB67C7686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceAralık.RabbitMQ", "Services\RabbitMQ\MicroserviceAralık.RabbitMQ\MicroserviceAralık.RabbitMQ.csproj", "{07CA9410-6D4B-4CD1-9B07-FC6875C34D25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -102,13 +133,37 @@ Global
 		{22006F50-31D2-47F8-A786-DE6CECD60E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22006F50-31D2-47F8-A786-DE6CECD60E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22006F50-31D2-47F8-A786-DE6CECD60E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D80D1E03-FD3F-44B7-AE29-DFA2D9D0498D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D80D1E03-FD3F-44B7-AE29-DFA2D9D0498D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80D1E03-FD3F-44B7-AE29-DFA2D9D0498D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D80D1E03-FD3F-44B7-AE29-DFA2D9D0498D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D2BC2D-B970-483B-BB69-FC867CD57E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D2BC2D-B970-483B-BB69-FC867CD57E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D2BC2D-B970-483B-BB69-FC867CD57E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D2BC2D-B970-483B-BB69-FC867CD57E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241A0BD1-CE79-4543-AC4A-1ACF33C8E87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241A0BD1-CE79-4543-AC4A-1ACF33C8E87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241A0BD1-CE79-4543-AC4A-1ACF33C8E87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241A0BD1-CE79-4543-AC4A-1ACF33C8E87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D97824A-918E-4195-BB68-CA311693FE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D97824A-918E-4195-BB68-CA311693FE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D97824A-918E-4195-BB68-CA311693FE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D97824A-918E-4195-BB68-CA311693FE62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076CA4A0-46A5-4A58-81E8-67C496CC343F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076CA4A0-46A5-4A58-81E8-67C496CC343F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076CA4A0-46A5-4A58-81E8-67C496CC343F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076CA4A0-46A5-4A58-81E8-67C496CC343F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07CA9410-6D4B-4CD1-9B07-FC6875C34D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07CA9410-6D4B-4CD1-9B07-FC6875C34D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07CA9410-6D4B-4CD1-9B07-FC6875C34D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07CA9410-6D4B-4CD1-9B07-FC6875C34D25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E72DE053-34FC-4D50-958F-A62EE0B858A7} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
-		{69ED50D6-7AE7-4FFE-920F-77002811F737} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
+		{E72DE053-34FC-4D50-958F-A62EE0B858A7} = {CC007625-3543-495B-9E07-87F2A5F5EA44}
+		{69ED50D6-7AE7-4FFE-920F-77002811F737} = {25817676-13A2-43C2-9E02-ED3E9D403433}
 		{8F20B86D-EF59-4E97-9A86-0F171C49FFF8} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
 		{1EB50232-AF28-49D1-922F-826A6806CFB5} = {8F20B86D-EF59-4E97-9A86-0F171C49FFF8}
 		{FD1E6895-6A9D-430F-9A85-77D775775FED} = {8F20B86D-EF59-4E97-9A86-0F171C49FFF8}
@@ -124,5 +179,18 @@ Global
 		{BE0344D7-49C4-4A97-9DE2-F884B320189C} = {6A8EEBAC-4764-4E52-8BBB-C412194DA07A}
 		{D64C554A-9A0A-47C9-8DC7-FFC23C928403} = {6A8EEBAC-4764-4E52-8BBB-C412194DA07A}
 		{22006F50-31D2-47F8-A786-DE6CECD60E1F} = {33E546DF-74B3-41C4-B0E2-79768F07BEEF}
+		{078E9710-4177-4447-985A-D446032E34FE} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
+		{D80D1E03-FD3F-44B7-AE29-DFA2D9D0498D} = {078E9710-4177-4447-985A-D446032E34FE}
+		{02D2BC2D-B970-483B-BB69-FC867CD57E89} = {16245329-9985-41F5-A685-27B33B946773}
+		{524DF63B-BAD8-4887-B686-55218D70219A} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
+		{CC007625-3543-495B-9E07-87F2A5F5EA44} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
+		{25817676-13A2-43C2-9E02-ED3E9D403433} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
+		{241A0BD1-CE79-4543-AC4A-1ACF33C8E87D} = {524DF63B-BAD8-4887-B686-55218D70219A}
+		{0EFCA366-95EF-4A9E-87D7-1E9D947AB069} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
+		{6D97824A-918E-4195-BB68-CA311693FE62} = {0EFCA366-95EF-4A9E-87D7-1E9D947AB069}
+		{FE960E70-C893-4CDA-8EA2-CCAD93775ECC} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
+		{076CA4A0-46A5-4A58-81E8-67C496CC343F} = {FE960E70-C893-4CDA-8EA2-CCAD93775ECC}
+		{B1FDEAFE-5B06-494E-BEC3-848FB67C7686} = {8DD895CD-20FA-48C0-B68F-BFFEF03A6704}
+		{07CA9410-6D4B-4CD1-9B07-FC6875C34D25} = {B1FDEAFE-5B06-494E-BEC3-848FB67C7686}
 	EndGlobalSection
 EndGlobal

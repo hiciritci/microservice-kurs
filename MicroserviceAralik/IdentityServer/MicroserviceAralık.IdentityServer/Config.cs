@@ -23,7 +23,26 @@ namespace MicroserviceAralık.IdentityServer
             new ApiResource("ResourceOrder")
             {
                 Scopes={"OrderReadPermission","OrderFullPermission"}
-            }
+            },
+            new ApiResource("ResourceCargo")
+            {
+
+                Scopes={"CargoReadPermission","CargoFullPermission"}
+            },
+            new ApiResource("ResourceBasket")
+            {
+                Scopes={"BasketReadPermission","BasketFullPermission"}
+            },
+            new ApiResource("ResourceOcelot")
+            {
+                Scopes={"OcelotFullPermission"}
+            },
+            new ApiResource("ResourceImage")
+            {
+                Scopes={"ImageFullPermission","ImageReadPermission"}
+            },
+            new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
+
         };
 
 
@@ -41,7 +60,15 @@ namespace MicroserviceAralık.IdentityServer
             new ApiScope("DiscountReadPermission","Read access to discount resource"),
             new ApiScope("DiscountFullPermission","Full access to discount resource"),
             new ApiScope("OrderReadPermission","Read access to order resource"),
-            new ApiScope("OrderFullPermission","Full access to order resource")
+            new ApiScope("OrderFullPermission","Full access to order resource"),
+            new ApiScope("CargoReadPermission","Read access to cargo resource"),
+            new ApiScope("CargoFullPermission","Full acess to cargo resource"),
+            new ApiScope("BasketReadPermssion","Read access to basket resource"),
+            new ApiScope("BasketFullPermission","Full access to basket resource"),
+            new ApiScope("OcelotFullPermission","Full access to oceolot resource"),
+            new ApiScope("ImageFullPermission","Full access to image resource"),
+            new ApiScope("ImageReadPermission","Read access to image resource"),
+            new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
         public static IEnumerable<Client> Clients => new Client[]
         {
@@ -52,7 +79,7 @@ namespace MicroserviceAralık.IdentityServer
                 ClientName="Visitor Client",
                 AllowedGrantTypes=GrantTypes.ClientCredentials,
                 ClientSecrets={new Secret("VisitorSecret".Sha256())},
-                AllowedScopes={"CatalogReadPermission","DiscountReadPermission"}
+                AllowedScopes={"CatalogReadPermission","DiscountReadPermission","OcelotFullPermission","ImageReadPermission"}
             },
             //AdminClient
             new Client
@@ -61,7 +88,7 @@ namespace MicroserviceAralık.IdentityServer
                 ClientName="Admin Client",
                 AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                 ClientSecrets={ new Secret("AdminSecret".Sha256())},
-                AllowedScopes={"CatalogFullPermission","DiscountFullPermission","OrderFullPermission",IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile },
+                AllowedScopes={"CatalogFullPermission","DiscountFullPermission","OrderFullPermission","CargoFullPermission","BasketFullPermission", "OcelotFullPermission","ImageFullPermission",IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile,IdentityServerConstants.LocalApi.ScopeName },
                 AccessTokenLifetime=7200
             }
         };
